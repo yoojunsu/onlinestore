@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html>	
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0" />
+<title>YJS</title>
+<link href="./store_src/store.css" type="text/css" rel="stylesheet" />
+<link href="./store_src/store-narrow.css" type="text/css" rel="stylesheet" media="screen and (max-width: 1024px)"/>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<!------ 헤더영역 ------>
+	<div class="header-wrap">
+		<div class="header-logo-wrap">
+			<a href="#none">
+				<img src="/storeimg/store-logo.png" alt="로고" />
+			</a>
+        </div>
+        <!-- 모바일 nav -->
+        <div class="mobile-hamburger-wrap">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="mobile-nav-overlay"></div>
+        <div class="mobile-nav-wrap">
+            <ul class="mobile-nav">
+				<li>
+					<a href="#none">
+						Homepage
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="sub-arrow">
+						Shop
+					</a>
+					<ul class="mobile-sub-nav">
+						<li>
+							<a href="#none">
+								Without Sidebar
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								Sidebar Left
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								Sidebar Right
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								Shop Carousel
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								Catalog Mode
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="sub-arrow">
+								Columns
+							</a>
+							<ul class="mobile-sub2-nav">
+								<li>
+									<a href="#none">
+										Two Columns
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Three Columns
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Four Columns
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#none" class="sub-arrow">
+								Categories
+							</a>
+							<ul class="mobile-sub2-nav">
+								<li>
+									<a href="#none">
+										Accessories
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Children
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Magazines
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Office
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Outdoor
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#none" class="sub-arrow">
+								Pagination
+							</a>
+							<ul class="mobile-sub2-nav">
+								<li>
+									<a href="#none">
+										Endless - Reveal
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Normal
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Endless
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">
+						Product
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="sub-arrow">
+						Woo Pages
+					</a>
+					<ul class="mobile-sub-nav">
+						<li>
+							<a href="#none">
+								Cart
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								Checkout
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								My Account
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								Order Tracking
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">
+						Buy!
+					</a>
+				</li>
+			</ul>    
+        </div>
+        <!--// 모바일 nav--> 
+		<div class="header-nav-wrap">
+			<ul class="header-nav">
+				<li>
+					<a href="#none">
+						Homepage
+					</a>
+				</li>
+				<li>
+					<a href="#none">
+						Shop
+					</a>
+					<ul class="sub-nav">
+						<li>
+							<a href="#none">
+								Without Sidebar
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								Sidebar Left
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								Sidebar Right
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								Shop Carousel
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								Catalog Mode
+							</a>
+						</li>
+						<li  class="sub2-nav-arrow">
+							<a href="#none">
+								Columns
+							</a>
+							<ul class="sub2-nav">
+								<li>
+									<a href="#none">
+										Two Columns
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Three Columns
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Four Columns
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="sub2-nav-arrow">
+							<a href="#none">
+								Categories
+							</a>
+							<ul class="sub2-nav">
+								<li>
+									<a href="#none">
+										Accessories
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Children
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Magazines
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Office
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Outdoor
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="sub2-nav-arrow">
+							<a href="#none">
+								Pagination
+							</a>
+							<ul class="sub2-nav">
+								<li>
+									<a href="#none">
+										Endless - Reveal
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Normal
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										Endless
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">
+						Product
+					</a>
+				</li>
+				<li>
+					<a href="#none">
+						Woo Pages
+					</a>
+					<ul class="sub-nav">
+						<li>
+							<a href="#none">
+								Cart
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								Checkout
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								My Account
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								Order Tracking
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">
+						Buy!
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!------ /헤더영역 ------>
+	<!------ 메인영역 ------>
+	<div class="main-wrap">
+		<div class="main">
+			<!-- 슬라이드 -->
+			<div class="main-slide-wrap">
+				<div class="slider-item slide-apply">
+					<div class="slider-img-wrap">
+						<img src="/storeimg/slide1.png" alt="slide1" />
+					</div>
+					<div class="slider-text-wrap">
+						<ul class="slider-text-list">
+							<li>
+								Lulita
+							</li>
+							<li>
+								Haning flower.
+							</li>
+							<li>
+								£50.99
+							</li>
+							<li>
+								£69.90
+							</li>
+							<li>
+								<a href="#none">
+									Shop Now
+								</a>
+							</li>
+						</ul>
+					</div>	
+				</div>
+				<div class="slider-item">
+					<div class="slider-img-wrap">
+						<img src="/storeimg/slide2.png" alt="slide2" />
+					</div>
+					<div class="slider-text-wrap">
+						<ul class="slider-text-list">
+							<li>
+								Panamericano
+							</li>
+							<li>
+								Our Bestselling Chair
+							</li>
+							<li>
+								£35.00
+							</li>
+							<li>
+								£69.90
+							</li>
+							<li>
+								<a href="#none">
+									Shop Now
+								</a>
+							</li>
+						</ul>
+					</div>						
+				</div>
+			</div>
+			<ul class="img-btn-wrap">
+				<li>
+					<img src="/storeimg/slide-img.png" alt="slidebtn" />
+					<span class="product-info">
+						Flower
+					</span>
+				</li>
+				<li>
+					<img src="/storeimg/slide-img2.png" alt="slidebtn" />
+					<span class="product-info">
+						Chair
+					</span>					
+				</li>
+			</ul>
+			<!-- /슬라이드 -->
+			<!-- 컨텐츠 -->
+			<div class="product-list-wrap">
+				<ul class="project-list">
+					<li>
+						<a href="#none">
+							<img src="/storeimg/product2.png" alt="children" />
+							<h2>
+								Children
+								<span>[3]</span>
+                            </h2>
+						</a>
+					</li>	
+					<li>
+						<a href="#none">
+							<img src="/storeimg/product1.png" alt="home" />
+							<h2>
+								Home
+								<span>[3]</span>
+                            </h2>
+						</a>
+					</li>	
+					<li>
+						<a href="#none">
+							<img src="/storeimg/product3.png" alt="outdoor" />
+							<h2>
+								Outdoor
+								<span>[3]</span>
+                            </h2>
+						</a>
+					</li>	
+				</ul>
+			</div>
+			<!--LATEST ITEMS-->
+			<div class="latest-items-wrap">
+				<div class="content-items-title-wrap latest-items-title-wrap">
+					<div class="content-items-title latest-items-title">
+						<span>LASTEST ITEMS</span>
+					</div>
+				</div>
+				<div class="latest-product-wrap">
+					<ul class="latest-product-list">
+						<!-- 첫번째 아이템 -->
+						<li class="latest-product-items product-items">
+							<a href="#none">
+								<img src="/storeimg/list1.jpg" alt="Boskke Cube" />
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Boskke Cube
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£18.00
+										</strong>
+									</div>
+								</div>	
+							</a>			
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>	
+						</li>
+						<!-- 두번째 아이템 -->
+						<li class="latest-product-items product-items">
+							<a href="#none">
+								<img src="/storeimg/list2.jpg" alt="Cast Iron Animals" />
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Cast Iron Animals
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£22.00 - £30.00
+										</strong>
+									</div>
+								</div>	
+							</a>		
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>	
+						</li>
+						<!-- 세번째 아이템 -->
+						<li class="latest-product-items product-items">
+							<a href="#none">
+								<img src="/storeimg/list3.jpg" alt="Hanging Vessel" />
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Hanging Vessel
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£50.99
+										</strong>
+									</div>
+								</div>	
+							</a>			
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>	
+						</li>
+						<!-- 네번째 아이템 -->
+						<li class="latest-product-items product-items">
+							<a href="#none">
+								<img src="/storeimg/list4.jpg" alt="Nourished" />
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Nourished
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£20.99
+										</strong>
+									</div>
+								</div>	
+							</a>			
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>	
+						</li>
+						<!-- 다섯번째 아이템 -->
+						<li class="latest-product-items product-items">
+							<a href="#none">
+								<img src="/storeimg/list5.jpg" alt="Oak Tray" />
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Oak Tray
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£18.00 - £25.00 
+										</strong>
+									</div>
+								</div>	
+							</a>		
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>	
+						</li>
+						<!-- 여섯번째 아이템 -->
+						<li class="latest-product-items product-items latest-best">
+							<span class="best-product">
+									Best!
+							</span>
+							<a href="#none">
+								<img src="/storeimg/list6.jpg" alt="Shapemaker" />
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Shapemaker
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£15.00 
+										</strong>
+									</div>
+								</div>	
+							</a>			
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>	
+						</li>
+					</ul>
+					<div class="latest-kind-list-wrap">
+						<div class="latest-kind-list-box">
+						<!-- New Items -->
+							<div class="latest-kind-list-content">
+								<p>New Items</p>
+								<ul class="latest-kind-list">
+									<li>
+										<a href="#none">
+											<img src="/storeimg/new-list1.jpg" alt="The Age of Collage" />
+										</a>
+										<div class="latest-kind-info sale-items">
+											<p>The Age of Collage</p>
+											<p>
+												<span>£20.00</span>
+												<span>£18.00</span>
+											</p>
+											<p>
+												<i class="fa fa-star"></i>
+												4.00
+											</p>
+										</div>
+									</li>
+									<li>
+										<a href="#none">
+											<img src="/storeimg/new-list2.jpg" alt="Sweeper & Funnel" />
+										</a>
+										<div class="latest-kind-info">
+											<p>Sweeper &#38; Funnel</p>
+											<p>
+												<span>£20.00</span>
+											</p>
+											<p>
+												<i class="fa fa-star"></i>
+												4.50
+											</p>
+										</div>
+									</li>
+									<li>
+										<a href="#none">
+											<img src="/storeimg/new-list3.jpg" alt="Stapler" />
+										</a>
+										<div class="latest-kind-info">
+											<p>Stapler</p>
+											<p>
+												<span>£33.00 - </span>
+												<span>£35.00</span>
+											</p>
+											<p>
+												<i class="fa fa-star"></i>
+												4.25
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- Top Rated -->
+							<div class="latest-kind-list-content">
+								<p>Top Rated</p>
+								<ul class="latest-kind-list">
+									<li>
+										<a href="#none">
+											<img src="/storeimg/toprated-list1.jpg" alt="Digital Clock" />
+										</a>
+										<div class="latest-kind-info">
+											<p>Digital Clock</p>
+											<p>
+												<span>£25.00 - </span>
+												<span>£28.00</span>
+											</p>
+											<p>
+												<i class="fa fa-star"></i>
+												5.00
+											</p>
+										</div>
+									</li>
+									<li>
+										<a href="#none">
+											<img src="/storeimg/toprated-list2.jpg" alt="Boskke Cube" />
+										</a>
+										<div class="latest-kind-info">
+											<p>Boskke Cube</p>
+											<p>
+												<span>£18.00</span>
+											</p>
+											<p>
+												<i class="fa fa-star"></i>
+												5.00
+											</p>
+										</div>
+									</li>
+									<li>
+										<a href="#none">
+											<img src="/storeimg/toprated-list3.jpg" alt="Wolfie" />
+										</a>
+										<div class="latest-kind-info">
+											<p>Wolfie</p>
+											<p>
+												<span>£9.00</span>
+											</p>
+											<p>
+												<i class="fa fa-star"></i>
+												5.00
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- Products -->
+							<div class="latest-kind-list-content">
+								<p>Products</p>
+								<ul class="latest-kind-list">
+									<li>
+										<a href="#none">
+											<img src="/storeimg/products-list1.jpg" alt="Shapemaker" />
+										</a>
+										<div class="latest-kind-info">
+											<p>Shapemaker</p>
+											<p>
+												<span>£15.00</span>
+											</p>
+											<p>
+												<i class="fa fa-star"></i>
+												2.00
+											</p>
+										</div>
+									</li>
+									<li>
+										<a href="#none">
+											<img src="/storeimg/products-list2.jpg" alt="ET66 Calculator" />
+										</a>
+										<div class="latest-kind-info sale-items">
+											<p>ET66 Calculator</p>
+											<p>
+												<span>£15.00</span>
+												<span>£12.00</span>
+											</p>
+											<p>
+												<i class="fa fa-star"></i>
+												4.00
+											</p>
+										</div>
+									</li>
+									<li>
+										<a href="#none">
+											<img src="/storeimg/products-list3.jpg" alt="The Age of Collage" />
+										</a>
+										<div class="latest-kind-info sale-items">
+											<p>The Age of Collage</p>
+											<p>
+												<span>£20.00</span>
+												<span>£18.00</span>
+											</p>
+											<p>
+												<i class="fa fa-star"></i>
+												4.00
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- Best Sellers -->
+							<div class="latest-kind-list-content">
+								<p>Best Sellers</p>
+								<ul class="latest-kind-list">
+									<li>
+										<a href="#none">
+											<img src="/storeimg/best-list1.jpg" alt="Boskke Cube" />
+										</a>
+										<div class="latest-kind-info">
+											<p>Boskke Cube</p>
+											<p>
+												<span>£18.00</span>
+											</p>
+											<p>
+												<i class="fa fa-star"></i>
+												5.00
+											</p>
+										</div>
+									</li>
+									<li>
+										<a href="#none">
+											<img src="/storeimg/best-list2.jpg" alt="Analog Clock" />
+										</a>
+										<div class="latest-kind-info">
+											<p>Analog Clock</p>
+											<p>
+												<span>£52.00 - </span>
+												<span>£55.00</span>
+											</p>
+											<p>
+												<i class="fa fa-star"></i>
+												5.00
+											</p>
+										</div>
+									</li>
+									<li>
+										<a href="#none">
+											<img src="/storeimg/best-list3.jpg" alt="Panamericana Chair" />
+										</a>
+										<div class="latest-kind-info">
+											<p>Panamericana Chair</p>
+											<p>
+												<span>£35.00</span>
+											</p>
+											<p>
+												<i class="fa fa-star"></i>
+												3.00
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="home-collection-items-wrap">
+				<div class="content-items-title-wrap home-collection-title-wrap">
+					<div class="content-items-title home-collection-title">
+						<span>Home Collection</span>
+					</div>
+				</div>
+				<div class="home-collection-slide-wrap">
+					<ul class="home-collection-slide"> 
+						<li class="home-collection-items product-items">
+							<a href="#none">
+								<img src="/storeimg/foot-slide1.jpg" alt="Salad Bowl"/>
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Salad Bowl
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£15.00 
+										</strong>
+									</div>									
+								</div>
+							</a>
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>								
+						</li>
+						<li class="home-collection-items product-items">
+							<a href="#none">
+								<img src="/storeimg/foot-slide2.jpg" alt="Analog Clock"/>
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Analog Clock
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£52.00 - £55.00
+										</strong>
+									</div>									
+								</div>
+							</a>
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>								
+						</li>
+						<li class="home-collection-items product-items">
+							<a href="#none">
+								<img src="/storeimg/foot-slide3.jpg" alt="Sky Planter"/>
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Sky Planter
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home , Office
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£9.00
+										</strong>
+									</div>									
+								</div>
+							</a>
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>								
+						</li>
+						<li class="home-collection-items product-items">
+							<a href="#none">
+								<img src="/storeimg/foot-slide4.jpg" alt="Spherical Vase"/>
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Spherical Vase
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£9.00
+										</strong>
+									</div>									
+								</div>
+							</a>
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>								
+						</li>
+						<li class="home-collection-items product-items">
+							<a href="#none">
+								<img src="/storeimg/foot-slide5.jpg" alt="Hasami Mug"/>
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Hasami Mug
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£15.00
+										</strong>
+									</div>									
+								</div>
+							</a>
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>								
+						</li>
+						<li class="home-collection-items product-items">
+							<a href="#none">
+								<img src="/storeimg/foot-slide6.jpg" alt="Scissors"/>
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Scissors
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home , Office
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£35.00
+										</strong>
+									</div>									
+								</div>
+							</a>
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>								
+						</li>
+						<li class="home-collection-items product-items">
+							<a href="#none">
+								<img src="/storeimg/foot-slide7.jpg" alt="Panamericana Chair"/>
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Panamericana Chair
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£35.00
+										</strong>
+									</div>									
+								</div>
+							</a>
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>								
+						</li>
+						<li class="home-collection-items product-items">
+							<a href="#none">
+								<img src="/storeimg/foot-slide8.jpg" alt="Oak Tray"/>
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Oak Tray
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£18.00
+										</strong>
+									</div>									
+								</div>
+							</a>
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>								
+						</li>
+						<li class="home-collection-items product-items">
+							<a href="#none">
+								<img src="/storeimg/foot-slide9.jpg" alt="Boskke Cube"/>
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Boskke Cube
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£18.00
+										</strong>
+									</div>									
+								</div>
+							</a>
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>								
+						</li>
+						<li class="home-collection-items product-items"> 
+							<a href="#none">
+								<img src="/storeimg/foot-slide10.jpg" alt="Sweeper & Funnel"/>
+								<div class="product-info-wrap">
+									<div class="product-info info-title">
+										<h3>
+											Sweeper &#38; Funnel
+                                        </h3>
+									</div>
+									<div class="product-info info-terms">
+										<span>
+											Home , Outdoor
+										</span>
+									</div>	
+									<div class="product-info info-price">
+										<strong>
+											£20.00
+										</strong>
+									</div>									
+								</div>
+							</a>
+							<div class="product-info info-shopping-bag">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>								
+						</li>
+					</ul>
+				</div>			
+            </div>
+            <div class="store-info-wrap">
+                <div calss="store-info">
+                    <span class="store-info-icon freeshipping-icon">
+                    </span>
+                    <div class="store-info-text">
+                        <h3>Free Shipping</h3>
+                        <p>
+                            I am text block. Click edit button to change this text. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
+                            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+                    </div>
+                </div>
+                <div calss="store-info">
+                    <span class="store-info-icon worldwide-icon">
+                    </span>
+                    <div class="store-info-text">
+                        <h3>Worldwide</h3>
+                        <p>
+                            I am text block. Click edit button to change this text. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
+                            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+                    </div>
+                </div>
+                <div calss="store-info">
+                    <span class="store-info-icon moneyback-icon">
+                    </span>
+                    <div class="store-info-text">
+                        <h3>30-day Money Back</h3>
+                        <p>
+                            I am text block. Click edit button to change this text. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
+                            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+                    </div>
+                </div>                                
+            </div>
+        </div>
+        <div class="main-last-wrap">
+            <h4>Free Shipping Worldwide</h4>
+            <p>For all the orders over 100$</p>
+        </div>            
+    </div>
+    <div class="footer-wrap">
+        <div class="footer">
+            <div class="footer-nav-wrap">
+                <div class="footer-nav footer-nav1">
+                    <h4>HOME</h4>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                Decor
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Lamps
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Blinds
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Wall Art
+                            </a>
+                        </li>                        
+                    </ul>
+                </div>
+                <div class="footer-nav footer-nav2">
+                    <h4>Office</h4>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                Desks
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Chairs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Furniture
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Accessories
+                            </a>
+                        </li>                        
+                    </ul>
+                </div>
+                <div class="footer-nav footer-nav3">
+                    <h4>Magazine</h4>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                Architecture
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Fashion
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Science
+                            </a>
+                        </li>                        
+                    </ul>
+                </div>
+                <div class="footer-nav footer-nav4">
+                    <h4>Children</h4>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                Costumes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Girls
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                School
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Toys
+                            </a>
+                        </li>                        
+                    </ul>
+                </div>
+                <div class="footer-nav footer-nav5">
+                    <h4>Wall</h4>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                Clocks
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Frames
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Lighting
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Mirrors
+                            </a>
+                        </li>                        
+                    </ul>
+                </div>
+                <div class="footer-nav footer-nav6">
+                    <h4>Outdoor</h4>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                Balcony
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Gardening
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Umbrellas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                Solar Lights
+                            </a>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-sns-wrap">
+                <ul class="footer-sns">
+                    <li>
+                        <a href="#none">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-copyright-wrap">
+                <span>&copy; Copyright 2020</span>
+                <span>Kalium Theme By Laborator</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/store_src/store.js" type="text/javascript"></script>
