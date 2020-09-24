@@ -34,14 +34,14 @@ $(function(){
     /** 모바일 네비게이션 **/
     $(".mobile-hamburger-wrap").on("click",function(){
         $(".mobile-nav-wrap").addClass("mobile-nav-wrap-active");
-		$(".mobile-nav-overlay").show();
-		$("body").css("overflow-y","hidden");
+        $(".mobile-nav-overlay").show();
+        $("body").css("overflow-y","hidden");
     });
 
     $(".mobile-nav-overlay").on("click",function(){
         $(".mobile-nav-wrap").removeClass("mobile-nav-wrap-active");
-		$(this).hide();
-		$("body").css("overflow-y","auto");
+        $(this).hide();
+        $("body").css("overflow-y","auto");
     });
 
     $(".mobile-nav > li > a").on("click",function(){
